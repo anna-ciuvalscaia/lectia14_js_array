@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+<ol id="client">
+    
+</ol>
+
+ <script>
+
+   const HING = "H"
+   const LOW = "L"
+   let clients = [
+      "John",
+      "Marry",
+      "Kate"
+    ]
+
+    let name = prompt(`Introduceti numele DVS!`)
+    
+
+    if(name){
+      let priority = confirm (`Care este preoritatea DVS? 
+
+                             High: "Ok" sau Low: "Cancel"` ) 
+       if(priority == true) {
+     let clientsHighPriority = clients.unshift(`${name}`)
+    } else if (priority == false) {
+      let clientsLowPriority = clients.push(`${name}`)
+    } 
+   } else {
+      alert("nu ati introdus numele DVS!")
+    }
+  
+    
+
+function showClients(){
+   for(let i = 0; i < clients.length; i++){
+    client.innerHTML += `<li> ${clients[i]}</li>`
+     } 
+}
+       
+ showClients()    
+
+
+</script>   
+    
+</body>
+</html>
+
+
